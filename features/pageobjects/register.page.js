@@ -13,7 +13,7 @@ const titleVerify = $("//h1[contains(text(),'Verifikasi No. Handphone')]")
 const fakeFirstName = () => faker.name.findName();
 const fakeLastName = () => faker.name.lastName();
 const fakeEmail = () => `${faker.name.firstName()}@1secmail.com`;
-
+const fakePhone = faker.phone.phoneNumber()
 
 
 class RegisterPage {
@@ -33,7 +33,7 @@ class RegisterPage {
         this.inputMobilePhone = async () => {
             await txtMobilePhone.waitForExist({ timeout: 50000 });
             await txtMobilePhone.click();
-            await txtMobilePhone.setValue('0821312100123');
+            await txtMobilePhone.setValue(fakePhone);
             await browser.pause(1000);
           };
 
