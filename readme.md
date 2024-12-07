@@ -1,6 +1,6 @@
 #### How to set up
 ```
-git clone https://github.com/robin-sitohang/WebdriverIO_Cucumber.git
+git clone https://github.com/riodarmaa/technical_test.git
 
 npm install
 ```
